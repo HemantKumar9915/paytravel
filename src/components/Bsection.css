@@ -1,0 +1,67 @@
+video {
+  object-fit: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.Bsection-container {
+  /* background: url("../../public/images/pexels-simon-migaj-1402850.jpg") center
+    center/cover no-repeat; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 1000px inset rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.Bsection-container > h1 {
+  color: #fff;
+  font-size: 80px;
+  margin-top: -100px;
+}
+.Bsection-container > p {
+  color: #fff;
+  font-size: 32px;
+  margin-top: 8px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.Bsection-btns {
+  margin: 32px;
+}
+.Bsection-btns .btn {
+  margin: 6px;
+}
+.fa-play-circle {
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 960px) {
+  .Bsection-container > h1 {
+    color: #fff;
+    font-size: 80px;
+    margin-top: -100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Bsection-container > h1 {
+    font-size: 50px;
+    margin-top: -100px;
+  }
+  .Bsection-container > p {
+    font-size: 30px;
+  }
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+  .btn {
+    width: 100%;
+  }
+}
